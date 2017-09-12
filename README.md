@@ -1,6 +1,4 @@
-# Příklad ke školení Dnešní webový frontend
-
-http://www.vzhurudolu.cz/kurzy/webovy-frontend
+# Příklad k CSS školení 1
 
 **Autor:** Martin Michálek, martin@vzhurudolu.cz
 
@@ -15,10 +13,10 @@ Pak tento konkrétní projekt:
 npm install -g grunt-cli
 
 # naklonování projektu
-git clone https://github.com/machal/polaroid-example.git
+git clone https://github.com/machal/kentico-css-1.git
 
 # skok do adresáře
-cd polaroid-example
+cd kentico-css-1
 
 # instalace závislostí
 npm install
