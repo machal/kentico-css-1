@@ -395,25 +395,25 @@ UI komponenta: Navigace
   background: #ddd;
   background: rgba(255, 255, 255, 0.5);
 }
-/*
-UI komponenta: Polaroid fotka
-=============================
-*/
-.polaroids {
+.ta-c,
+#polaroids .polaroid .head {
+  text-align: center;
+}
+#polaroids {
   zoom: 1;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.polaroids:before,
-.polaroids:after {
+#polaroids:before,
+#polaroids:after {
   content: "";
   display: table;
 }
-.polaroids:after {
+#polaroids:after {
   clear: both;
 }
-.polaroid {
+#polaroids .polaroid {
   float: left;
   width: 25%;
   height: 180px;
@@ -422,30 +422,27 @@ UI komponenta: Polaroid fotka
   background-color: white;
   color: darkgrey;
 }
-.polaroid a {
+#polaroids .polaroid a {
   color: #666;
   text-decoration: none;
 }
-.polaroid:hover,
-.polaroid:focus,
-.polaroid:active,
-.polaroid--active {
+#polaroids .polaroid:hover,
+#polaroids .polaroid:focus,
+#polaroids .polaroid:active,
+#polaroids .polaroid--active {
   background-color: #fcf883;
   background-color: #ffffff;
 }
-.polaroid:hover .polaroid__head,
-.polaroid:focus .polaroid__head,
-.polaroid:active .polaroid__head,
-.polaroid--active .polaroid__head {
-  color: black;
-}
-.polaroid:target {
-  background: yellow;
-}
-.polaroid__head {
-  text-align: center;
+#polaroids .polaroid .head {
   font: 1rem/1.33 sans-serif;
+  color: black;
   font-weight: normal;
+  /* Rewrite .head */
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#polaroids .polaroid:target {
+  background: yellow;
 }
 /*
 Layout stranky
